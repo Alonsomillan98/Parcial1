@@ -20,8 +20,7 @@ Funciones 1 -  Crea una funcion llamada "mayusculas" que:
 */
 
 // CREA TU FUNCION MAYUSCULAS aqui:
-
-
+function mayusculas(nombres){ console.log(nombres.toUpperCase()) }
 
 
 /*
@@ -35,8 +34,7 @@ Funciones 2 -  Crea una funcion llamada "calculateDogAge" que:
 */
 
 // CREA TU FUNCION calculateDogAge aqui:
-
-
+function calculateDogAge(age){console.log("Tu perro tiene "+ age*7 + "años perro")}
 
 
 
@@ -54,6 +52,7 @@ A) Define un objeto tipo "Perro" que reciba 3 parametros
 3) Raza
 
 
+
 B) Crea 3 objectos  con diferentes valores.
 
 C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. Lo puedes hacer en una sola línea o en 3 lineas aparte. 
@@ -61,6 +60,20 @@ C) Con un console.log escribe el nombre del primer objeto, el color del segundo,
 
 */
 
+function Perro(nombre, color, raza){
+    this.nombre = nombre;
+    this.color = color;
+    this.raza = raza;
+    this.wow = w0w;
+}
+
+var myDog1 = new Perro('Camilo','Beige','Labrador');
+var myDog2 = new Perro('Rayo','Blanco','Husky')
+var myDog3 = new Perro('Yumi','Cafe','Salchicha')
+
+function wow(){
+    console.log(myDog1.nombre + myDog2.color + myDog3.raza )
+}
 
 
 /***
@@ -89,7 +102,7 @@ calculateDogAge(4);
 
 <body>
 
-
+wow();
 
 </body>
 
